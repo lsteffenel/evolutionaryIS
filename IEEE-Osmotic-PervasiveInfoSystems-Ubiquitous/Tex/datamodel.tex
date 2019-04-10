@@ -1,0 +1,30 @@
+\section{The new graphic elements introduced}
+\label{sec:discussion}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[scale=0.2]{figure/hybrid_(sql-nosql)_ERextended}
+	\caption{New graphical notations introduced in our new model}
+	\label{fig:new-el}
+	
+\end{figure}
+
+Figure \ref{fig:new-el} shows the new graphic elements we introduced for putting together
+ NO-SQL and SQL-Like DBs.
+In order to explain the usage of extended Entity-Relationship Model in the eHealth solution, we focus about two screenshot of it. The figure~\ref{fig:exERD1} shows the presence of big data entity and big data relationship to manage the scalability of patient treatment. The set of treatment creates the medical record of patient and it stores the medical history. Every cross indicates a door to pass from relationship model to NoSQL model and conversely.
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.45]{figure/exampleExtERD1.png}
+	\caption{First example of extended ERD}
+	\label{fig:exERD1}
+\end{figure}
+\par
+The figure~\ref{fig:exERD2} shows the usage of big data priority link. The scenario presents a patient that want to fix an appointment with a doctor to make a medical examination. The appointment is assigned to a room and it starts as ``assigned'' status. When the appointment is done the status change and it can be filed. With reference to figure~\ref{fig:exERD2}, we identify \textit{Staff} the more scalable choice and we made a decision treat it as document colletion.  For this reason, we put the black arrow in \textit{Staff}.
+
+\begin{figure}[htp]
+	\centering
+	\includegraphics[scale=0.45]{figure/exampleExtERD2.png}
+	\caption{Second example of extended ERD}
+	\label{fig:exERD2}
+\end{figure}
+
+
